@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    background: url('https://images3.alphacoders.com/863/863185.jpg') center / cover fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    width: 95%;
+    margin: 0 auto;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.nav_links ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav_links ul li{
+    margin: 0 25px;
+}
+.nav_links ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+.nav_links ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    bottom: -5px;
+    background-color: white;
+    transition: 0.5s;
+}
+.nav_links ul li a:hover:before{
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+/* header_inside */
+
+
+
+
+.header_inside{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+}
+.header_inside h3{
+    font-style: italic;
+    color: gray;
+    margin: 0;
+    font-size: 25px;
+}
+.header_inside h1{
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
+.header_inside button{
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: yellow;
+}
+
+
+
+/* main */
+
+
+
+.services{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.services_title{
+    text-align: center;
+}
+.services_title h3{
+    font-size: 30px;
+    margin: 0;
+}
+.services_title p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.services_body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.services_child{
+    width: 30%;
+    text-align: center;
+}
+.services_child_image span{
+    background: yellow;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+}
+
+.services_child_content{
+    margin-top: 50px;
+}
+.services_child_content h1{
+    margin: 0;
+}
+.services_child_content p{
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 1.6;
+    color: gray;
+    margin-top: 15px;
+}
+
+
+/* custom */
+
+.custom{
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    width: 40%;
+    margin: 100px auto;
+    height: 500px;
+    background: red;
+}
